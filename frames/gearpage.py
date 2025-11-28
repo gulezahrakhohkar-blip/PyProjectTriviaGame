@@ -15,7 +15,7 @@ ALL_TOPICS = [
     "Advanced Topics"
 ]
 
-with open("data/qna.json", "r") as f:
+with open("qna.json", "r") as f:
     TOPIC_QUESTIONS = json.load(f)
 
 def open_topic_window(topic_name):
@@ -55,3 +55,4 @@ def open_topic_window(topic_name):
 
     utils.widgets["clickable"].append(clickable_widget)
     utils.grid.addWidget(clickable_widget, 1, 0, 1, 2)
+
