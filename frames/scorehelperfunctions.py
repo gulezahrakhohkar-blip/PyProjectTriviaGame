@@ -1,7 +1,7 @@
 import json, os
 from frames.utils import widgets
 
-PROGRESS_FILE = "data/prog.json"
+PROGRESS_FILE = "prog.json"
 
 
 def load_progress():
@@ -89,3 +89,4 @@ def get_overall_percentage():
     if total_attempts == 0:
         return 0
     return int((earned / total_attempts) * 100)
+
